@@ -1,0 +1,396 @@
+:root {
+    --header-bg: #252b3b;
+    --text-dark: rgba(45, 52, 72, 0.75);
+    --text-light: #7f92a3be;
+    --icon-color: #e9ecef;
+    --active-color: #0f9cf3;
+    --succes-color: rgb(111, 208, 136);
+    --warning-color: rgb(255, 187, 68);
+    --danger-color: rgb(243, 47, 83);
+    --input-color: rgba(255, 255, 255, .5);
+    --main-bg: #e8f3f7;
+    --outline-color:rgba(255, 255, 255, .25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.w-2 {
+    width: 50%;
+}
+
+.w-4 {
+    width: 25%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+/* header */
+header {
+    background-color: var(--header-bg);
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 9 !important;
+}
+
+.navbar-header .logo {
+    width: 250px;
+}
+
+.navbar-header .ri-menu-2-line {
+    color: var(--icon-color);
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.navbar-header form i {
+    color: var(--input-color);
+    font-size: 15px;
+}
+
+.navbar-header form input {
+    color: var(--input-color);
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.navbar-header .navbar-icon .us-fleg {
+    margin-right: 25px;
+}
+
+.navbar-header .navbar-icon i {
+    color: var(--icon-color);
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.navbar-header .navbar-icon .profile img {
+    border: 3px solid var(--outline-color);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.navbar-header .navbar-icon .profile {
+    color: var(--icon-color);
+}
+.droupdown{
+    position: relative;
+}
+.droupdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 2px 2px 20px -15px;
+    margin-top: 15px;
+    background-color: white;
+    transform: translateY(50px);
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+.droupdown-menu li a i{
+    font-size: 14px !important;
+    margin-right: 8px !important;
+}
+.droupdown-menu li a,.droupdown-menu li a i{
+    font-size: 16px;
+    padding: 5px;
+    color: var(--text-dark) !important;
+}
+.droupdown-menu li:last-child a,.droupdown-menu li:last-child i{
+    color: var(--danger-color) !important;
+    margin-top: 8px !important;
+}
+.droupdown:hover .droupdown-menu{
+    transform: translateX(0);
+    visibility: visible;
+}
+
+/* slidebar */
+aside {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-top: 70px;
+    overflow-y: scroll;
+    background-color: white;
+    transition: all 0.3s linear;
+}
+.active{
+    transform: translateX(-100%);
+}
+
+.slidebar-status {
+    margin: 20px 0;
+}
+
+.slidebar .slidebar-status img {
+    border-radius: 50%;
+    display: inline;
+}
+
+.slidebar .slidebar-status h3 {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.slidebar .slidebar-status p {
+    color: var(--text-color);
+}
+
+.slidebar .slidebar-status p i,
+.sale-item p i {
+    color: var(--succes-color);
+    margin-right: 8px;
+}
+
+.slidebar h5 {
+    color: var(--text-light);
+    font-weight: 600;
+    margin: 20px 25px;
+}
+
+.slidebar ul li a {
+    color: var(--text-dark);
+    margin: 15px 25px;
+}
+
+.slidebar ul li a .slidebar-item-title {
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.slidebar ul li a .slidebar-item-title i {
+    margin-right: 5px;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background:rgba(161, 239, 255, 0.568);
+    border-radius: 5px;
+}
+
+/* main  */
+main {
+    width: calc(100% - 250px);
+    transform: translateY(70px);
+    margin-left: 250px;
+    transition: all 0.3s linear;
+}
+.active-main{
+    width: 100%;
+    margin-left: 0;
+}
+.deshboard {
+    background-color: var(--main-bg);
+    padding: 25px;
+}
+
+.deshboard .dashboard-title {
+    margin-bottom: 25px;
+}
+
+.deshboard .dashboard-title a {
+    color: var(--text-dark);
+}
+
+.deshboard .dashboard-title i,
+.deshboard .dashboard-title span {
+    color: var(--text-light);
+}
+
+.sale-item,
+.report,
+.revenue,
+.user-data,
+.mounthly-chart {
+    padding: 25px;
+    margin-right: 25px !important;
+    background-color: white;
+    box-shadow: 2px 2px 20px -15px;
+}
+
+.sale-item p,
+.sale-item span,
+.report-title p,
+.report-content p,
+.revenue-title p,
+.revenue-content p,
+.mounthly-title p,
+.mounthly-content p {
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.sale-item h2 {
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.sale-item .totle-sale i {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--main-bg);
+    color: var(--active-color);
+}
+
+.sale-item :last-child p {
+    margin-bottom: 5px;
+}
+
+.sale-item p span {
+    color: var(--succes-color);
+    margin-right: 5px;
+}
+
+.sale-product :nth-child(2) .sale-item .totle-sale i,
+.sale-product :nth-child(4) .sale-item .totle-sale i {
+    color: var(--succes-color);
+}
+
+.sale-product :nth-child(2) .sale-item p span {
+    color: var(--danger-color);
+}
+
+/* report  */
+.report,
+.revenue {
+    margin: 25PX 0;
+}
+
+.report-title h4,
+.revenue-title h4,
+.user-data h4,
+.mounthly-title h4 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.report-content,
+.revenue-content,
+.mounthly-content {
+    margin-top: 10px;
+}
+
+.report-content h3,
+.revenue-content h3,
+.mounthly-content h3 {
+    font-weight: 500;
+}
+
+.report-content span {
+    color: var(--succes-color);
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.apexcharts-toolbar,
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center,
+.apexcharts-legend.apx-legend-position-right {
+    display: none !important;
+}
+
+/* user info. */
+.user-data{
+    overflow-x: scroll !important;
+}
+.user-data table thead tr th {
+    font-weight: 600;
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #cad3dd;
+}
+
+.user-data table tbody tr td:first-child {
+    font-weight: 500;
+}
+
+.user-data table tbody tr td {
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px solid #cad3dd;
+}
+
+.user-data table tbody tr td i {
+    font-size: 14px;
+    margin-right: 5px;
+    color: var(--succes-color);
+}
+
+.user-data table tbody tr:nth-child(2) td i,.user-data table tbody tr:nth-child(6) td i{
+    color: var(--warning-color) !important;
+}
+
+/* mounthly */
+#chart2 {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+/* copy-right */
+.copy-right{
+    background-color:white;
+    color:var(--text-dark);
+    padding: 25px 0;
+}

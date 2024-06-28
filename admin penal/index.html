@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin pannel</title>
+    <!-- logo -->
+    <link rel="icon" href="images/favicon.ico" type="favicon"/>
+    <!-- remix icon -->
+    <link rel="stylesheet" href="remix/remixicon.css" type="text/css">
+    <!-- font  -->
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- responsive in max width -->
+    <link rel="stylesheet" href="css/max.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar-header d-flex justify-between align-center">
+            <div class="d-flex">
+                <div class="logo text-center">
+                    <img src="images/logo-light.png" alt="logo" title="logo" width="100px">
+                </div>
+                <i class="ri-menu-2-line"></i>
+                <form>
+                    <i class="ri-search-line"></i>
+                    <input type="text" placeholder="search...">
+                </form>
+            </div>
+            <div class="navbar-icon d-flex align-center">
+                <div class="us-fleg">
+                    <img src="images/us.jpg" alt="us-fleg" title="us-fleg" width="30px">
+                </div>
+                <i class="ri-apps-2-line"></i>
+                <i class="ri-fullscreen-line"></i>
+                <i class="ri-notification-4-line"></i>
+                <div class="droupdown">
+                    <a href="javascript:void(0)" class=" profile d-flex align-center">
+                        <img src="images/avatar-1.jpg" alt="profile" title="profile" width="40px">
+                        <span>julia</span>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </a>
+                    <div>
+                        <ul class="droupdown-menu">
+                            <li><a href="javascript:void(0)"><i class="ri-account-pin-circle-line"></i>profile</a></li>
+                            <li><a href="javascript:void(0)"><i class="ri-wallet-2-line"></i>My Wallet</a></li>
+                            <li><a href="javascript:void(0)"><i class="ri-settings-3-line"></i>setting</a></li>
+                            <li><a href="javascript:void(0)"><i class="ri-lock-unlock-line"></i>lock screen</a></li>
+                            <li><a href="javascript:void(0)"><i class="ri-shut-down-line"></i>log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <i class="ri-settings-4-line"></i>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <div class="slidebar">
+            <div class="slidebar-status text-center">
+                <img src="images/avatar-1.jpg" alt="profile" title="profile" width="80px">
+                <div>
+                    <h3>Julia Hudda</h3>
+                    <p><i class="ri-record-circle-line"></i>Online</p>
+                </div>
+            </div>
+            <div>
+                <h5>MENU</h5>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-dashboard-line"></i>
+                                <span>Dashboard</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-calendar-2-line"></i>
+                                <span>Calendar</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-mail-send-line"></i>
+                                <span>Email</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-layout-5-line"></i>
+                                <span>Layouts</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>PAGES</h5>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-account-circle-line"></i>
+                                <span>Authentication</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-profile-line"></i>
+                                <span>Utility</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Components</h5>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-pencil-ruler-2-line"></i>
+                                <span>UI Elements</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-vip-crown-2-line"></i>
+                                <span>Advanced UI</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-eraser-fill"></i>
+                                <span>Forms</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-table-2"></i>
+                                <span>Tables</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-bar-chart-line"></i>
+                                <span>Charts</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-brush-line"></i>
+                                <span>Icons</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-map-pin-line"></i>
+                                <span>Maps</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" class="d-flex justify-between align-center">
+                            <div class="slidebar-item-title">
+                                <i class="ri-share-line"></i>
+                                <span>Multi Level</span>
+                            </div>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="deshboard">
+            <div class="dashboard-title d-flex justify-between align-center">
+                <h3>DESHBOARD</h3>
+                <div>
+                    <a href="javascript:void(0)">Upcube</a>
+                    <i class="ri-arrow-right-s-line"></i>
+                    <span>Dashboard</span>
+                </div>
+            </div>
+            <div class="main-deshboard">
+                <div class="sale-product">
+                    <div class="row">
+                        <div class="w-4 col-sm-2 col-md-1">
+                            <div class="sale-item">
+                                <div class="totle-sale d-flex align-center justify-between">
+                                    <div>
+                                        <p>Total Sales</p>
+                                        <h2>1452</h2>
+                                    </div>
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                </div>
+                                <div class="item-content">
+                                    <p><span><i class="ri-arrow-right-up-line"></i>9.23%</span>from previous</p>
+                                    <span>period</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-4 col-sm-2 col-md-1">
+                            <div class="sale-item">
+                                <div class="totle-sale d-flex align-center justify-between">
+                                    <div>
+                                        <p>New Orders</p>
+                                        <h2>938</h2>
+                                    </div>
+                                    <i>$</i>
+                                </div>
+                                <div class="item-content">
+                                    <p><span><i class="ri-arrow-right-down-line" style="color: red;"></i>9.23%</span>from
+                                        previous</p>
+                                    <span>period</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-4 col-sm-2 col-md-1">
+                            <div class="sale-item">
+                                <div class="totle-sale d-flex align-center justify-between">
+                                    <div>
+                                        <p>New Users</p>
+                                        <h2>8246</h2>
+                                    </div>
+                                    <i class="ri-user-3-line"></i>
+                                </div>
+                                <div class="item-content">
+                                    <p><span><i class="ri-arrow-right-up-line"></i>9.23%</span>from previous</p>
+                                    <span>period</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-4 col-sm-2 col-md-1">
+                            <div class="sale-item">
+                                <div class="totle-sale d-flex align-center justify-between">
+                                    <div>
+                                        <p>Unique Visitors</p>
+                                        <h2>29670</h2>
+                                    </div>
+                                    <i class="ri-btc-line"></i>
+                                </div>
+                                <div class="item-content">
+                                    <p><span><i class="ri-arrow-right-up-line"></i>9.23%</span>from previous</p>
+                                    <span>period</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="w-2 col-sm-1">
+                        <div class="report">
+                            <div class="report-title d-flex justify-between">
+                                <h4>Email Sents</h4>
+                                <p>Report <i class="ri-arrow-drop-down-line"></i></p>
+                            </div>
+                            <div class="report-content text-center d-flex justify-around">
+                                <div>
+                                    <h3>25,117 <span><i class="ri-arrow-up-s-fill"></i>2.2%</span></h3>
+                                    <p>Marketplace</p>
+                                </div>
+                                <div>
+                                    <h3>$34,856 <span><i class="ri-arrow-up-s-fill"></i>1.2%</span></h3>
+                                    <p>Last Week</p>
+                                </div>
+                                <div>
+                                    <h3>$18,225 <span><i class="ri-arrow-up-s-fill"></i>1.7%</span></h3>
+                                    <p>Last Month</p>
+                                </div>
+                            </div>
+                            <div id="chart"></div>
+                        </div>
+                    </div>
+                    <div class="w-2 col-sm-1">
+                        <div class="revenue">
+                            <div class="revenue-title d-flex justify-between">
+                                <h4>Revenue</h4>
+                                <p>This years <i class="ri-arrow-drop-down-line"></i></p>
+                            </div>
+                            <div class="revenue-content text-center d-flex justify-around">
+                                <div>
+                                    <h3>17,493</h3>
+                                    <p>Marketplace</p>
+                                </div>
+                                <div>
+                                    <h3>$44,960</h3>
+                                    <p>Last Week</p>
+                                </div>
+                                <div>
+                                    <h3>$29,142</h3>
+                                    <p>Last Month</p>
+                                </div>
+                            </div>
+                            <div id="chart1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="w-70 col-sm-1">
+                        <div class="user-data">
+                            <div class="user-title d-flex justify-between">
+                                <h4>Email Sents</h4>
+                                <p>Report <i class="ri-arrow-drop-down-line"></i></p>
+                            </div>
+                            <table width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Status</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Charles Casey</td>
+                                        <td>Web Developer</td>
+                                        <td><i class="ri-circle-fill"></i>Active</td>
+                                        <td>23</td>
+                                        <td>04 Apr, 2021</td>
+                                        <td>$42,450</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alex Adams</td>
+                                        <td>Python Developer</td>
+                                        <td><i class="ri-circle-fill"></i>Deactive</td>
+                                        <td>28</td>
+                                        <td>01 Aug, 2021</td>
+                                        <td> $25,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Prezy Kelsey</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td><i class="ri-circle-fill"></i>Status</td>
+                                        <td>35</td>
+                                        <td>15 Jun, 2021</td>
+                                        <td>$59,350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ruhi Fancher</td>
+                                        <td>React Developer</td>
+                                        <td><i class="ri-circle-fill"></i>Active</td>
+                                        <td>25</td>
+                                        <td>01 March, 2021</td>
+                                        <td>$23,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Juliet Pineda</td>
+                                        <td>Senior Web Designer</td>
+                                        <td><i class="ri-circle-fill"></i>Active</td>
+                                        <td>38</td>
+                                        <td>01 Jan, 2021</td>
+                                        <td>$69,185</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Den Simpson</td>
+                                        <td>Web Designer</td>
+                                        <td><i class="ri-circle-fill"></i>Deactive</td>
+                                        <td>21</td>
+                                        <td>01 Sep, 2021</td>
+                                        <td>$37,845</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mahek Torres</td>
+                                        <td>Senior Laravel Developer</td>
+                                        <td><i class="ri-circle-fill"></i>Active</td>
+                                        <td>32</td>
+                                        <td>20 May, 2021</td>
+                                        <td>$55,100</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="w-30 col-sm-1">
+                        <div class="mounthly-chart">
+                            <div class="mounthly-title d-flex justify-between">
+                                <h4>Email Sents</h4>
+                                <p>Apr <i class="ri-arrow-drop-down-line"></i></p>
+                            </div>
+                            <div class="mounthly-content text-center d-flex justify-around">
+                                <div>
+                                    <h3>3475</h3>
+                                    <p>Marketplace</p>
+                                </div>
+                                <div>
+                                    <h3>458</h3>
+                                    <p>Last Week</p>
+                                </div>
+                                <div>
+                                    <h3>9062</h3>
+                                    <p>Last Month</p>
+                                </div>
+                            </div>
+                            <div id="chart2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right d-flex justify-between">
+            <p>2024 © Upcube.</p>
+            <p>Crafted with <i class="ri-heart-fill" style="color: red;"></i> by Themesdesign</p>
+        </div>
+    </main>
+
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/apexcharts.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $('.navbar-header .ri-menu-2-line').click(function(){
+                $('aside').toggleClass('active');
+                $('main').toggleClass('active-main');
+                $('aside').toggleClass('add-class');
+            });
+        });
+    </script>
+    <script>
+        // chart 1(Report)
+        var options = {
+            series: [{
+                name: 'series1',
+                data: [31, 40, 28, 51, 42, 109, 100]
+            }, {
+                name: 'series2',
+                data: [11, 32, 45, 32, 34, 52, 41]
+            }],
+            chart: {
+                height: 350,
+                type: 'area'
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            xaxis: {
+                type: 'datetime',
+                categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+            },
+            tooltip: {
+                x: {
+                    format: 'dd/MM/yy HH:mm'
+                },
+            },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+        // chart 2(Revenue)
+        var options = {
+            series: [{
+                name: 'Website Blog',
+                type: 'column',
+                data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
+            }, {
+                name: 'Social Media',
+                type: 'line',
+                data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
+            }],
+            chart: {
+                height: 350,
+                type: 'line',
+            },
+            stroke: {
+                width: [0, 4]
+            },
+            title: {
+                text: ''
+            },
+            dataLabels: {
+                enabled: false,
+                enabledOnSeries: [1]
+            },
+            labels: ['01 Jan 2001', '02 Jan 2001', '03 Jan 2001', '04 Jan 2001', '05 Jan 2001', '06 Jan 2001', '07 Jan 2001', '08 Jan 2001', '09 Jan 2001', '10 Jan 2001', '11 Jan 2001', '12 Jan 2001'],
+            xaxis: {
+                type: 'datetime'
+            },
+            yaxis: [{
+                title: {
+                    text: '',
+                },
+
+            }, {
+                opposite: true,
+                title: {
+                    text: ''
+                }
+            }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart1"), options);
+        chart.render();
+
+        // chart 3(mounthly)
+        var options = {
+            series: [42, 26, 15],
+            chart: {
+                width: 300,
+                type: 'donut',
+            },
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: '75%'
+                    }
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: {
+                        width: 200
+                    },
+                    legend: {
+                        show: false
+                    }
+                }
+            }],
+            legend: {
+                position: 'right',
+                offsetY: 0,
+                height: 230,
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart2"), options);
+        chart.render();
+    </script>
+</body>
+
+</html>
